@@ -1,5 +1,13 @@
 # 10 kilobytes of summer
 
-10kofsummer was made with Sass, Compass and some manual minifying. Svg's are ridiculously optimized, class and file names are unsementically short and everything is minified to a single line. I managed to squeeze the site into 8868 bytes.
+Feeling like summer has been gone fot too long already? 10kofsummer is a little HTML and CSS only game to get you back in a summery mood.
 
-Have fun playing my little 10k game!
+## Technologies
+
+The project was made with Sass, Compass and SVG's. The CSS is compressed and unreadable, but I'm including the Sass files for reference.
+
+As for the HTML, the class names are quite unsementic to reduce bytes. I did try to make it as accessible as possible.
+
+The SVG's are ridiculously optimized to reduce file size. Think of removing excess anchors and handles, rounding all the numbers to integers and converting polygons to paths for shorter syntaxes.
+
+JS is deliberately left out because I felt like it would hog up too much of the allowed size. I used keyframes and some smart selectors to animate the page and make the game interactive.
