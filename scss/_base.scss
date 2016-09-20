@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+	overflow: hidden;
+	font-family: Verdana;
+	cursor: grab;
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+}
+h1 {
+	width: 100%;
+	text-align: center;
+	top: 20%;
+	font-size: 20px;
+	color: #c1272d;
+	z-index: 11;
+}
+h2 {
+	font-size: 64px;
+	text-shadow: 2px 2px 0 #000;
+	font-weight: normal;
+	color: #c1272d;
+	margin-top: 0;
+}
+h2,
+tspan {
+	font-family: Georgia;
+}
+span {
+	display: block;
+	font-size: 18px;
+}
+.btn {
+	background: #c1272d;
+	color: #fff;
+	font-size: 24px;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 12px 32px;
+	cursor: pointer;
+	margin-top: 50px;
+}
+.bg {
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: linear-gradient(to bottom,#96CFC9 0%,#b9d2cf 50%,#66A9AB 50%,#83c3c5 75%,#e3cfa0 75%,#FFECBF 100%); 
+}
