@@ -1,6 +1,6 @@
 # 10 kilobytes of summer
 
-Feeling like summer has been gone fot too long already? 10kofsummer is a little HTML and CSS only game to get you back in a summery mood.
+Feeling like summer has been gone for too long already? 10kofsummer is a little HTML and CSS only game to get you back in a summery mood.
 
 ## Technologies
 
