@@ -1,0 +1,236 @@
+// shape
+.s {
+	position: absolute;
+}
+
+// title
+.t {
+	top: 3%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50vw;
+	height: 50vw;
+	max-width: 640px;
+	max-height: 60vh;
+}
+
+// sun
+.sn {
+	min-height: 100px;
+	min-width: 200px;
+	height: 10vw;
+	width: 20vw;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	border-radius: 999px 999px 0 0;
+	background: #ecc949;
+}
+
+// wave
+.w {
+	width: 100%;
+	min-height: 20px;
+	height: 3vw;
+	top: 50%;
+	margin-top: -2.9vw;
+	background: url(w.svg) repeat;
+	animation: wave 3s ease-in-out alternate infinite;
+
+	&2 {
+		margin-top: -3.9vw;
+		background: url(w2.svg) repeat;
+		animation-delay: -3s;
+	}
+}
+
+// beach
+.b {
+	width: 100%;
+	height: 20px;
+	top: 75%;
+	background: url(b.svg) repeat;
+	background-size: 50% 100%;
+	animation: beach 3s alternate ease infinite;
+	z-index: 4;
+}
+
+// boat
+.bt {
+	animation: sail 8s linear infinite forwards;
+	min-width: 90px;
+	min-height: 120px;
+	width: 12vw;
+	height: 16vw;
+	transform: translate(-100%,-100%);
+	top: 50%;
+	left: 0;
+	z-index: 3;
+	cursor: grabbing;
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+
+	&Cb {
+		height: 1px;
+		width: 1px;
+
+		&:checked {
+			& + .bt {
+				animation-play-state: paused;
+			}
+			& ~ .m {
+				opacity: 1;
+				transition: opacity .3s ease;
+				z-index: 10;
+			}
+		}
+	}
+}
+
+// modal
+.m {
+	opacity: 0;
+	background: rgba(255,255,255,0.7);
+	padding: 30px;
+	border-radius: 16px;
+	width: 480px;
+	max-width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: -1;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+// island
+.i {
+	min-width: 160px;
+	min-height: 120px;
+	width: 16vw;
+	height: 12vw;
+	top: 58%;
+	left: 55%;
+	transform: translateY(-100%);
+	z-index: 2;
+	pointer-events: none;
+}
+
+// leaf
+.l {
+	animation: wiggle 2s ease alternate infinite;
+	transform-origin: left;
+	fill: #355913;
+
+	&1 {
+		animation-delay: -.3s;
+	}
+	&2 {
+		transform-origin: right;
+	}
+	&3 {
+		transform-origin: right;
+		animation-delay: -.8s;
+		fill: #3E661B;
+	}
+	&4 {
+		animation-delay: -1.4s;
+		fill: #3E661B;
+	}
+}
+
+// lighthouse
+.lh {
+	min-width: 120px;
+	min-height: 200px;
+	width: 9vw;
+	height: 15vw;
+	top: 50%;
+	right: 66%;
+	transform: translateY(-100%);
+}
+// light
+.li {
+	min-width: 60px;
+	min-height: 120px;
+	width: 5vw;
+	height: 10vw;
+	top: -8%;
+	left: 50%;
+	overflow: hidden;
+	z-index: 3;
+	animation: light 6s linear infinite;
+	transform-origin: left;
+	
+	&:after {
+		content: "";
+		position: relative;
+		min-width: 70px;
+		min-height: 70px;
+		width: 7vw;
+		height: 7vw;
+		background: linear-gradient(to bottom right,#f1dfa1 0%,rgba(0,0,0,0) 50%);
+		transform: rotate(-45deg);
+		display: block;
+		transform-origin: left;
+		top: 25%;
+		left: 50%;
+	}
+}
+
+// chair
+.c {
+	min-width: 120px;
+	min-height: 120px;
+	width: 12vw;
+	height: 12vw;
+	bottom: 10%;
+	right: 70%;
+	z-index: 5;
+	pointer-events: none;
+
+	line {
+		stroke: #663717;
+		stroke-linecap: round;
+		stroke-width: 2px;
+	}
+}
+
+// umbrella
+.u {
+	min-width: 200px;
+	min-height: 200px;
+	width: 20vw;
+	height: 20vw;
+	bottom: 13%;
+	right: 60%;
+	z-index: 5;
+	pointer-events: none;
+}
+
+// ball
+.bl {
+	min-width: 60px;
+	min-height: 60px;
+	width: 6vw;
+	height: 6vw;
+	bottom: 5%;
+	right: 33%;
+	animation: roll 3s ease-in-out alternate infinite;
+	animation-delay: -1.5s;
+	z-index: 5;
+}
+
+// surf
+.su {
+	min-width: 80px;
+	min-height: 160px;
+	width: 8vw;
+	height: 16vw;
+	transform: rotate(5deg);
+	left: 70%;
+	bottom: 10%;
+	z-index: 5;
+	pointer-events: none;
+}
