@@ -15,11 +15,12 @@ JS is deliberately left out because I felt like it would hog up too much of the 
 ## File sizes
 
 | File       | Size           |
-|------------|----------------|
-| index.html | 5311 bytes     |
-| s.css      | 4227 bytes     |
-| b.svg      | 181 bytes      |
-| w.svg      | 121 bytes      |
-| w2.svg     | 121 bytes      |
-| **total**  | **9961 bytes** |
+|------------|---------------:|
+| index.html | `5311 bytes`   |
+| s.css      | `4227 bytes`   |
+| b.svg      | `181 bytes`    |
+| w.svg      | `121 bytes`    |
+| w2.svg     | `121 bytes`    |
+|            |                |
+| **total**  | `9961 bytes`   |
 
