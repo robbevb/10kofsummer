@@ -1,1 +1,5 @@
 AddType image/svg+xml .svg .svgz
+
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css image/svg+xml
+</ifmodule>
