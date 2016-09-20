@@ -11,3 +11,15 @@ As for the HTML, the class names are quite unsementic to reduce bytes. I did try
 The SVG's are ridiculously optimized to reduce file size. Think of removing excess anchors and handles, rounding all the numbers to integers and converting polygons to paths for shorter syntaxes.
 
 JS is deliberately left out because I felt like it would hog up too much of the allowed size. I used keyframes and some smart selectors to animate the page and make the game interactive.
+
+## File sizes
+
+| File       | Size           |
+|------------|----------------|
+| index.html | 5311 bytes     |
+| s.css      | 4227 bytes     |
+| b.svg      | 181 bytes      |
+| w.svg      | 121 bytes      |
+| w2.svg     | 121 bytes      |
+| **total**  | **9961 bytes** |
+
